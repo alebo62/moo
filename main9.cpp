@@ -7,16 +7,16 @@ int main()
     Student_info record;
     std::string::size_type maxlen = 0;
 
-    while(record.read(cin)){
-        maxlen = max(maxlen, record.name().size());
+    while(record.read(std::cin)){
+        maxlen = std::max(maxlen, record.name().size());
         students.push_back(record);
     }
 
-    sort(students.begin(), students.end(), compare);
+    std::sort(students.begin(), students.end(), compare);
 
     for(std::vector<Student_info>::size_type i = 0; i < students.size(); i++){
         std::cout << students[i].name()
-                  << string(maxlen + 1 - students[i].name().size(), ' ');
+                  << std::string(maxlen + 1 - students[i].name().size(), ' ');
         try{
             double final_grade = students[i].grade();
             std::streamsize prec = std::cout.precision();

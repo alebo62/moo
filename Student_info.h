@@ -3,6 +3,8 @@
 #include <vector>
 #include <string>
 #include <iostream>
+#include <algorithm>
+#include <iomanip>
 
 struct Student_info {
 private:
@@ -14,7 +16,7 @@ public:
     Student_info (std::istream&);
     double grade() const;
     std::istream& read(std::istream&);
-    std::string name() const {return n;}
+    std::string name()  {return n;}
     bool valid() const {return !homework.empty();}
 };
 
