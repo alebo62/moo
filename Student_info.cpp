@@ -15,7 +15,8 @@ double Student_info::grade() const
     return ::grade(midterm, final, homework);
 }
 
-bool compare(Student_info& x, Student_info& y) {
+bool compare(Student_info& x, Student_info& y)
+{
     return x.name() < y.name();
 }
 
