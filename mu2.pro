@@ -21,7 +21,8 @@ SOURCES += \
         main9.cpp \
         median.cpp \
         split_string.cpp \
-        string_frame.cpp
+        string_frame.cpp \
+        vec.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -31,4 +32,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 HEADERS += \
     Student_info.h \
     grade.h \
-    median.h
+    median.h \
+    vec.h
