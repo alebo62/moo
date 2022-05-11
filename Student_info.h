@@ -10,9 +10,12 @@ private:
     double final, midterm;
     std::vector<double> homework;
 public:
+    Student_info ();
+    Student_info (std::istream&);
     double grade() const;
     std::istream& read(std::istream&);
     std::string name() const {return n;}
+    bool valid() const {return !homework.empty();}
 };
 
 std::istream& read_hw(std::istream&, std::vector<double>&);
