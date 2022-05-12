@@ -21,6 +21,7 @@ SOURCES += \
         main9.cpp \
         median.cpp \
         split_string.cpp \
+        str.cpp \
         string_frame.cpp \
         vec.cpp
 
@@ -33,4 +34,5 @@ HEADERS += \
     Student_info.h \
     grade.h \
     median.h \
+    str.h \
     vec.h

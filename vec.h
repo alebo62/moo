@@ -1,6 +1,8 @@
 #ifndef VEC_H
 #define VEC_H
 #include <memory>
+#include <cstring>
+#include <iostream>
 template<class T>
 class Vec
 {
@@ -13,14 +15,14 @@ public:
     typedef T value_type;
 
     Vec() { create();}
-    explicit Vec(size_type, const T& val = T())    { create(sz, val);}
+    explicit Vec(size_type sz, const T& val = T())    { create(sz, val);}
     Vec(const Vec& v) { create(v.begin(),v.end());}
     Vec& operator =(const Vec& v);
     ~Vec(){ uncreate();}
 private:
     T* data;
-    T* limit;
     T* avail;
+    T* limit;
     std::allocator<T> alloc;
 
     void create();
@@ -40,14 +42,11 @@ public:
 
 
     size_type size() const {return avail - data;}
-    reference operator[](size_type st){return data[i];}
-    const_reference operator[](size_type st){return data[i];}
+    reference operator[](size_type i){return data[i];}
+    const_reference operator[](size_type i) const {return data[i];}
 
-    void push_back(const T& val){
-        if(avail == limit)
-            grow();
-        unchecked_append(val);
-    }
+    void push_back(const T& );
+    void clear() {}
 };
 
 #endif // VEC_H
