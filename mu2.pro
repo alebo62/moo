@@ -17,12 +17,17 @@ SOURCES += \
         grade.cpp \
         mai6.cpp \
         main.cpp \
+        main13.cpp \
+        main13_1.cpp \
+        main13_2.cpp \
+        main13_3.cpp \
         main4.cpp \
         main5.cpp \
         main6_2.cpp \
         main9.cpp \
         median.cpp \
         split_string.cpp \
+        stdnt_info.cpp \
         str.cpp \
         string_frame.cpp \
         vec.cpp
@@ -38,5 +43,6 @@ HEADERS += \
     grad.h \
     grade.h \
     median.h \
+    stdnt_info.h \
     str.h \
     vec.h

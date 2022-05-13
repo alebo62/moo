@@ -6,10 +6,11 @@
 class Grad: public Core
 {
 public:
-    Grad();
-    Grad(std::istream&);
-    std::istream& read(std::istream&);// переопределяем
-    double grade() const;     // переопределяем
+    Grad* clone() const { return new Grad(*this); }
+    Grad():Core(), thesis(0.0) {}
+    Grad(std::istream& is) {read(is);}
+    std::istream& read(std::istream&);// ??????????
+    double grade() const;     // ??????????
 private:
     double thesis;
 };
