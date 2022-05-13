@@ -10,8 +10,10 @@ CONFIG -= app_bundle
 SOURCES += \
         Student_info.cpp \
         analysis.cpp \
+        core.cpp \
         extract_fails.cpp \
         find_urls.cpp \
+        grad.cpp \
         grade.cpp \
         mai6.cpp \
         main.cpp \
@@ -32,6 +34,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 HEADERS += \
     Student_info.h \
+    core.h \
+    grad.h \
     grade.h \
     median.h \
     str.h \

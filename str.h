@@ -27,7 +27,7 @@ public:
     char& operator[](size_type sz){ return data[sz];}
     const char& operator[](size_type sz)const{ return data[sz];}
 
-    Str& operator+(const Str& s){
+    Str& operator+=(const Str& s){
         std::copy(s.data.begin(), s.data.end(), std::back_inserter(data) );
         return *this;
     }
