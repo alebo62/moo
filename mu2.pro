@@ -15,12 +15,14 @@ SOURCES += \
         find_urls.cpp \
         grad.cpp \
         grade.cpp \
+        handle.cpp \
         mai6.cpp \
         main.cpp \
         main13.cpp \
         main13_1.cpp \
         main13_2.cpp \
         main13_3.cpp \
+        main14.cpp \
         main4.cpp \
         main5.cpp \
         main6_2.cpp \
@@ -42,6 +44,7 @@ HEADERS += \
     core.h \
     grad.h \
     grade.h \
+    handle.h \
     median.h \
     stdnt_info.h \
     str.h \

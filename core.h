@@ -12,8 +12,9 @@ public:
     std::string name() const;
     virtual std::istream& read(std::istream&);
     virtual double grade() const;
-protected:
     virtual Core* clone() const { return new Core(*this); }
+protected:
+
     std::istream& read_common(std::istream&);
     double midterm, final;
     std::vector<double> homework;
