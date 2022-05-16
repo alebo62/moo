@@ -13,11 +13,13 @@ SOURCES += \
         core.cpp \
         extract_fails.cpp \
         find_urls.cpp \
+        frame.cpp \
         grad.cpp \
         grade.cpp \
         handle.cpp \
         mai6.cpp \
         main.cpp \
+        main1.cpp \
         main13.cpp \
         main13_1.cpp \
         main13_2.cpp \
@@ -42,6 +44,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 HEADERS += \
     Student_info.h \
     core.h \
+    frame.h \
     grad.h \
     grade.h \
     handle.h \
