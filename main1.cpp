@@ -5,6 +5,6 @@ int main()
 
     Frame* fr = new Frame();
     fr->read(std::cin);
-    fr->writeFrame();
+    fr->writeFrameCycle();
     return 0;
 }

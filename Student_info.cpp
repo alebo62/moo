@@ -27,7 +27,12 @@ bool compare(Student_info& x, Student_info& y)
 
 std::istream& Student_info::read(std::istream& is)
 {
-    is >> n >> midterm >> final;
+    std::cout << "Please, enter you name: ";
+    is >> n;
+    std::cout << "Hello, " << n << "!" << std::endl;
+    std::cout << "Please, enter midterm and final : ";
+    std::cin >> midterm >> final;
+    std::cout << "Please, enter homework and CTRL-Z at the end: ";
     read_hw(is, homework);
     return is;
 }

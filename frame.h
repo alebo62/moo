@@ -7,14 +7,16 @@ class Frame
 {
 public:
 
-    Frame(const std::string& s = "NN", std::string gs = "Hello", int p = 1):name(s), greeting(gs), pads(p){}
+    Frame(const std::string& s = "NN", std::string gs = "Hello", int rp = 1, int cp = 1):name(s),
+        greeting(gs), rpads(1), cpads(1) {}
     void writeFrame() const;
     void writeFrameCycle() const;
     std::istream& read(std::istream& );
 private:
     std::string name;
     std::string greeting;
-    int pads;
+    int rpads;
+    int cpads;
 };
 
 #endif // FRAME_H
